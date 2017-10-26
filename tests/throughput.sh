@@ -3,7 +3,7 @@ set -e
 currentDir="$(cd "$(dirname "$0")"; pwd)"
 
 # Host to use. Needs to include the protocol.
-host=${1:-"https://10.0.0.109:443"}
+host=${1:-"https://10.0.0.50:443"}
 # Credentials to use for the test. USER:PASS format.
 credentials=${2:-"789c46b1-71f6-4ed5-8c54-816aa4f8c502:abczO3xZCLrMN6v2BKK1dXYFpXlPkccOFqm12CdAsMgRU4VrNZ9lyGVCGuMDGIwP"}
 # concurrency level of the throughput test: How many requests should
@@ -13,7 +13,7 @@ concurrency=${3:-2}
 # of CPU cores
 threads=${4:-1}
 # How long to run the test
-duration=${5:-3s}
+duration=${5:-10s}
 
 action="noop"
 #"$currentDir/create.sh" "$host" "$credentials" "$action"

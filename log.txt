@@ -1,39 +1,46 @@
-{"log":"[2017-10-26T11:13:26.783Z] [INFO] [#tid_1554] [RestAPIVersion] authenticate: 789c46b1-71f6-4ed5-8c54-816aa4f8c502\n","stream":"stdout","time":"2017-10-26T11:13:26.785082324Z"}
-{"log":"[2017-10-26T11:13:26.783Z] [INFO] [#tid_1554] [Identity] [GET] serving from cache: CacheKey(789c46b1-71f6-4ed5-8c54-816aa4f8c502) [marker:database_cacheHit_count:1]\n","stream":"stdout","time":"2017-10-26T11:13:26.785101284Z"}
-{"log":"[2017-10-26T11:13:26.783Z] [INFO] [#tid_1554] [RestAPIVersion] authentication valid\n","stream":"stdout","time":"2017-10-26T11:13:26.78510815Z"}
-{"log":"[2017-10-26T11:13:26.783Z] [INFO] [#tid_1554] [LocalEntitlementProvider] checking user 'whisk.system' has privilege 'ACTIVATE' for 'actions/whisk.system/noop'\n","stream":"stdout","time":"2017-10-26T11:13:26.78511322Z"}
-{"log":"[2017-10-26T11:13:26.783Z] [INFO] [#tid_1554] [ActivationThrottler] concurrent activations in system = 0, below limit = 100\n","stream":"stdout","time":"2017-10-26T11:13:26.785118134Z"}
-{"log":"[2017-10-26T11:13:26.783Z] [INFO] [#tid_1554] [ActivationThrottler] namespace = 789c46b1-71f6-4ed5-8c54-816aa4f8c502, concurrent activations = 0, below limit = 100\n","stream":"stdout","time":"2017-10-26T11:13:26.785122947Z"}
-{"log":"[2017-10-26T11:13:26.783Z] [INFO] [#tid_1554] [LocalEntitlementProvider] authorized\n","stream":"stdout","time":"2017-10-26T11:13:26.785127697Z"}
-{"log":"[2017-10-26T11:13:26.783Z] [INFO] [#tid_1554] [WhiskAction] [GET] serving from datastore: CacheKey(whisk.system/noop) [marker:database_cacheMiss_count:3]\n","stream":"stdout","time":"2017-10-26T11:13:26.78513219Z"}
-{"log":"[2017-10-26T11:13:26.783Z] [INFO] [#tid_1554] [CouchDbRestStore] [GET] 'test_whisks' finding document: 'id: whisk.system/noop' [marker:database_getDocument_start:3]\n","stream":"stdout","time":"2017-10-26T11:13:26.785144977Z"}
-{"log":"[2017-10-26T11:13:26.783Z] [INFO] [#tid_1556] POST /api/v1/namespaces/_/actions/noop blocking=true\n","stream":"stdout","time":"2017-10-26T11:13:26.785150267Z"}
-{"log":"[2017-10-26T11:13:26.784Z] [INFO] [#tid_1556] [RestAPIVersion] authenticate: 789c46b1-71f6-4ed5-8c54-816aa4f8c502\n","stream":"stdout","time":"2017-10-26T11:13:26.785154909Z"}
-{"log":"[2017-10-26T11:13:26.784Z] [INFO] [#tid_1556] [Identity] [GET] serving from cache: CacheKey(789c46b1-71f6-4ed5-8c54-816aa4f8c502) [marker:database_cacheHit_count:0]\n","stream":"stdout","time":"2017-10-26T11:13:26.785159433Z"}
-{"log":"[2017-10-26T11:13:26.784Z] [INFO] [#tid_1556] [RestAPIVersion] authentication valid\n","stream":"stdout","time":"2017-10-26T11:13:26.785164225Z"}
-{"log":"[2017-10-26T11:13:26.784Z] [INFO] [#tid_1556] [LocalEntitlementProvider] checking user 'whisk.system' has privilege 'ACTIVATE' for 'actions/whisk.system/noop'\n","stream":"stdout","time":"2017-10-26T11:13:26.785168564Z"}
-{"log":"[2017-10-26T11:13:26.784Z] [INFO] [#tid_1556] [ActivationThrottler] concurrent activations in system = 0, below limit = 100\n","stream":"stdout","time":"2017-10-26T11:13:26.785173351Z"}
-{"log":"[2017-10-26T11:13:26.784Z] [INFO] [#tid_1556] [ActivationThrottler] namespace = 789c46b1-71f6-4ed5-8c54-816aa4f8c502, concurrent activations = 0, below limit = 100\n","stream":"stdout","time":"2017-10-26T11:13:26.785180609Z"}
-{"log":"[2017-10-26T11:13:26.784Z] [INFO] [#tid_1556] [LocalEntitlementProvider] authorized\n","stream":"stdout","time":"2017-10-26T11:13:26.785185622Z"}
-{"log":"[2017-10-26T11:13:26.784Z] [INFO] [#tid_1556] [WhiskAction] [GET] serving from cache: CacheKey(whisk.system/noop) [marker:database_cacheHit_count:1]\n","stream":"stdout","time":"2017-10-26T11:13:26.785190205Z"}
-{"log":"[2017-10-26T11:13:26.793Z] [INFO] [#tid_1554] [CouchDbRestStore] [GET] 'test_whisks', document: 'id: whisk.system/noop'; not found. [marker:database_getDocument_finish:12:9]\n","stream":"stdout","time":"2017-10-26T11:13:26.794782661Z"}
-{"log":"[2017-10-26T11:13:26.793Z] [INFO] [#tid_1554] [WhiskAction] invalidating CacheKey(whisk.system/noop)\n","stream":"stdout","time":"2017-10-26T11:13:26.794869225Z"}
-{"log":"[2017-10-26T11:13:26.793Z] [INFO] [#tid_1554] [ActionsApi] [GET] entity does not exist\n","stream":"stdout","time":"2017-10-26T11:13:26.794902349Z"}
-{"log":"[2017-10-26T11:13:26.793Z] [INFO] [#tid_1556] [ActionsApi] [GET] entity does not exist\n","stream":"stdout","time":"2017-10-26T11:13:26.794978532Z"}
-{"log":"[2017-10-26T11:13:26.793Z] [INFO] [#tid_1554] [BasicHttpService] [marker:http_post.404_count:13:13]\n","stream":"stdout","time":"2017-10-26T11:13:26.795029285Z"}
-{"log":"[2017-10-26T11:13:26.793Z] [INFO] [#tid_1556] [BasicHttpService] [marker:http_post.404_count:10:10]\n","stream":"stdout","time":"2017-10-26T11:13:26.795263162Z"}
-{"log":"[2017-10-26T11:13:26.808Z] [INFO] [#tid_1560] POST /api/v1/namespaces/_/actions/noop blocking=true\n","stream":"stdout","time":"2017-10-26T11:13:26.811156781Z"}
-{"log":"[2017-10-26T11:13:26.808Z] [INFO] [#tid_1558] POST /api/v1/namespaces/_/actions/noop blocking=true\n","stream":"stdout","time":"2017-10-26T11:13:26.811206889Z"}
-{"log":"[2017-10-26T11:13:26.809Z] [INFO] [#tid_1558] [RestAPIVersion] authenticate: 789c46b1-71f6-4ed5-8c54-816aa4f8c502\n","stream":"stdout","time":"2017-10-26T11:13:26.811214785Z"}
-{"log":"[2017-10-26T11:13:26.809Z] [INFO] [#tid_1560] [RestAPIVersion] authenticate: 789c46b1-71f6-4ed5-8c54-816aa4f8c502\n","stream":"stdout","time":"2017-10-26T11:13:26.811219979Z"}
-{"log":"[2017-10-26T11:13:26.809Z] [INFO] [#tid_1558] [Identity] [GET] serving from cache: CacheKey(789c46b1-71f6-4ed5-8c54-816aa4f8c502) [marker:database_cacheHit_count:1]\n","stream":"stdout","time":"2017-10-26T11:13:26.811224861Z"}
-{"log":"[2017-10-26T11:13:26.809Z] [INFO] [#tid_1560] [Identity] [GET] serving from cache: CacheKey(789c46b1-71f6-4ed5-8c54-816aa4f8c502) [marker:database_cacheHit_count:1]\n","stream":"stdout","time":"2017-10-26T11:13:26.811237813Z"}
-{"log":"[2017-10-26T11:13:26.809Z] [INFO] [#tid_1560] [RestAPIVersion] authentication valid\n","stream":"stdout","time":"2017-10-26T11:13:26.811242914Z"}
-{"log":"[2017-10-26T11:13:26.809Z] [INFO] [#tid_1558] [RestAPIVersion] authentication valid\n","stream":"stdout","time":"2017-10-26T11:13:26.811247584Z"}
-{"log":"[2017-10-26T11:13:26.809Z] [INFO] [#tid_1560] [LocalEntitlementProvider] checking user 'whisk.system' has privilege 'ACTIVATE' for 'actions/whisk.system/noop'\n","stream":"stdout","time":"2017-10-26T11:13:26.811252082Z"}
-{"log":"[2017-10-26T11:13:26.809Z] [INFO] [#tid_1558] [LocalEntitlementProvider] checking user 'whisk.system' has privilege 'ACTIVATE' for 'actions/whisk.system/noop'\n","stream":"stdout","time":"2017-10-26T11:13:26.811256922Z"}
-{"log":"[2017-10-26T11:13:26.809Z] [INFO] [#tid_1558] [ActivationThrottler] concurrent activations in system = 0, below limit = 100\n","stream":"stdout","time":"2017-10-26T11:13:26.811261724Z"}
-{"log":"[2017-10-26T11:13:26.809Z] [INFO] [#tid_1560] [ActivationThrottler] concurrent activations in system = 0, below limit = 100\n","stream":"stdout","time":"2017-10-26T11:13:26.811266437Z"}
-{"log":"[2017-10-26T11:13:26.812Z] [INFO] [#tid_1558] [LocalEntitlementProvider] not authorized: RejectRequest(429 Too Many Requests) Too many requests in the last minute (count: 101, allowed: 100).\n","stream":"stdout","time":"2017-10-26T11:13:26.812252437Z"}
-{"log":"[2017-10-26T11:13:26.812Z] [INFO] [#tid_1558] [BasicHttpService] [marker:http_post.429_count:3:3]\n","stream":"stdout","time":"2017-10-26T11:13:26.81227118Z"}
-{"log":"[2017-10-26T11:13:26.813Z] [INFO] [#tid_1560] [LocalEntitlementProvider] not authorized: RejectRequest(429 Too Many Requests) Too many requests in the last minute (count: 102, allowed: 100).\n","stream":"stdout","time":"2017-10-26T11:13:26.813269603Z"}
+{"log":"[2017-10-26T12:57:57.636Z] [INFO] [#tid_452] [LoadBalancerService] posted to invoker1[0][115] [marker:controller_kafka_finish:9:5]\n","stream":"stdout","time":"2017-10-26T12:57:57.638110471Z"}
+{"log":"[2017-10-26T12:57:57.636Z] [INFO] [#tid_452] [ActionsApi]  [marker:controller_loadbalancer_finish:9:6]\n","stream":"stdout","time":"2017-10-26T12:57:57.638118747Z"}
+{"log":"[2017-10-26T12:57:57.637Z] [INFO] [#tid_452] [ActionsApi] action activation will block for result upto 60 seconds\n","stream":"stdout","time":"2017-10-26T12:57:57.638123682Z"}
+{"log":"[2017-10-26T12:57:57.637Z] [INFO] [#tid_448] [LoadBalancerService] received active ack for '85dab791799343fc9ab791799353fca7'\n","stream":"stdout","time":"2017-10-26T12:57:57.638128427Z"}
+{"log":"[2017-10-26T12:57:57.637Z] [INFO] [#tid_448] [ActionsApi]  [marker:controller_blockingActivation_finish:111:109]\n","stream":"stdout","time":"2017-10-26T12:57:57.638133147Z"}
+{"log":"[2017-10-26T12:57:57.637Z] [INFO] [#tid_448] [Worker] dbpoll shutdown\n","stream":"stdout","time":"2017-10-26T12:57:57.638137751Z"}
+{"log":"[2017-10-26T12:57:57.637Z] [INFO] [#tid_448] [ActivationFinisher] finisher shutdown\n","stream":"stdout","time":"2017-10-26T12:57:57.638142004Z"}
+{"log":"[2017-10-26T12:57:57.638Z] [INFO] [#tid_448] [BasicHttpService] [marker:http_post.200_count:112:112]\n","stream":"stdout","time":"2017-10-26T12:57:57.638453608Z"}
+{"log":"[2017-10-26T12:57:57.652Z] [INFO] [#tid_454] POST /api/v1/namespaces/_/actions/noop blocking=true\n","stream":"stdout","time":"2017-10-26T12:57:57.652567596Z"}
+{"log":"[2017-10-26T12:57:57.652Z] [INFO] [#tid_454] [RestAPIVersion] authenticate: 789c46b1-71f6-4ed5-8c54-816aa4f8c502\n","stream":"stdout","time":"2017-10-26T12:57:57.653065623Z"}
+{"log":"[2017-10-26T12:57:57.654Z] [INFO] [#tid_454] [Identity] [GET] serving from cache: CacheKey(789c46b1-71f6-4ed5-8c54-816aa4f8c502) [marker:database_cacheHit_count:1]\n","stream":"stdout","time":"2017-10-26T12:57:57.655005492Z"}
+{"log":"[2017-10-26T12:57:57.654Z] [INFO] [#tid_454] [RestAPIVersion] authentication valid\n","stream":"stdout","time":"2017-10-26T12:57:57.655028774Z"}
+{"log":"[2017-10-26T12:57:57.654Z] [INFO] [#tid_454] [LocalEntitlementProvider] checking user 'whisk.system' has privilege 'ACTIVATE' for 'actions/whisk.system/noop'\n","stream":"stdout","time":"2017-10-26T12:57:57.655046872Z"}
+{"log":"[2017-10-26T12:57:57.654Z] [INFO] [#tid_454] [ActivationThrottler] concurrent activations in system = 1, below limit = 100\n","stream":"stdout","time":"2017-10-26T12:57:57.655056609Z"}
+{"log":"[2017-10-26T12:57:57.654Z] [INFO] [#tid_454] [ActivationThrottler] namespace = 789c46b1-71f6-4ed5-8c54-816aa4f8c502, concurrent activations = 1, below limit = 100\n","stream":"stdout","time":"2017-10-26T12:57:57.655065031Z"}
+{"log":"[2017-10-26T12:57:57.655Z] [INFO] [#tid_454] [LocalEntitlementProvider] authorized\n","stream":"stdout","time":"2017-10-26T12:57:57.655239387Z"}
+{"log":"[2017-10-26T12:57:57.655Z] [INFO] [#tid_454] [WhiskAction] [GET] serving from cache: CacheKey(whisk.system/noop) [marker:database_cacheHit_count:3]\n","stream":"stdout","time":"2017-10-26T12:57:57.655258644Z"}
+{"log":"[2017-10-26T12:57:57.655Z] [INFO] [#tid_454] [ActionsApi] [GET] entity success\n","stream":"stdout","time":"2017-10-26T12:57:57.655279342Z"}
+{"log":"[2017-10-26T12:57:57.655Z] [INFO] [#tid_454] [ActionsApi]  [marker:controller_blockingActivation_start:3]\n","stream":"stdout","time":"2017-10-26T12:57:57.655287734Z"}
+{"log":"[2017-10-26T12:57:57.655Z] [INFO] [#tid_454] [ActionsApi] action activation id: 58a9c343ea144f6fa9c343ea142f6f91 [marker:controller_loadbalancer_start:3]\n","stream":"stdout","time":"2017-10-26T12:57:57.655720371Z"}
+{"log":"[2017-10-26T12:57:57.655Z] [INFO] [#tid_454] [LoadBalancerService] posting topic 'invoker1' with activation id '58a9c343ea144f6fa9c343ea142f6f91' [marker:controller_kafka_start:4]\n","stream":"stdout","time":"2017-10-26T12:57:57.655786684Z"}
+{"log":"[2017-10-26T12:57:57.660Z] [INFO] [#tid_454] [LoadBalancerService] posted to invoker1[0][116] [marker:controller_kafka_finish:9:5]\n","stream":"stdout","time":"2017-10-26T12:57:57.661078626Z"}
+{"log":"[2017-10-26T12:57:57.660Z] [INFO] [#tid_454] [ActionsApi]  [marker:controller_loadbalancer_finish:9:6]\n","stream":"stdout","time":"2017-10-26T12:57:57.661107182Z"}
+{"log":"[2017-10-26T12:57:57.661Z] [INFO] [#tid_454] [ActionsApi] action activation will block for result upto 60 seconds\n","stream":"stdout","time":"2017-10-26T12:57:57.661578769Z"}
+{"log":"[2017-10-26T12:57:57.680Z] [INFO] [#sid_110] [MessageFeed] processing completed0[0][123] (1/128)\n","stream":"stdout","time":"2017-10-26T12:57:57.681071824Z"}
+{"log":"[2017-10-26T12:57:57.681Z] [INFO] [#tid_452] [LoadBalancerService] received active ack for '433f3c0ac3e3486fbf3c0ac3e3386f7b'\n","stream":"stdout","time":"2017-10-26T12:57:57.682220859Z"}
+{"log":"[2017-10-26T12:57:57.681Z] [INFO] [#tid_452] [ActivationFinisher] finisher shutdown\n","stream":"stdout","time":"2017-10-26T12:57:57.682241354Z"}
+{"log":"[2017-10-26T12:57:57.681Z] [INFO] [#tid_452] [Worker] dbpoll shutdown\n","stream":"stdout","time":"2017-10-26T12:57:57.682248332Z"}
+{"log":"[2017-10-26T12:57:57.682Z] [INFO] [#tid_452] [ActionsApi]  [marker:controller_blockingActivation_finish:54:51]\n","stream":"stdout","time":"2017-10-26T12:57:57.682253194Z"}
+{"log":"[2017-10-26T12:57:57.682Z] [INFO] [#tid_452] [BasicHttpService] [marker:http_post.200_count:55:55]\n","stream":"stdout","time":"2017-10-26T12:57:57.682718465Z"}
+{"log":"[2017-10-26T12:57:57.694Z] [INFO] [#tid_456] POST /api/v1/namespaces/_/actions/noop blocking=true\n","stream":"stdout","time":"2017-10-26T12:57:57.697120667Z"}
+{"log":"[2017-10-26T12:57:57.696Z] [INFO] [#tid_456] [RestAPIVersion] authenticate: 789c46b1-71f6-4ed5-8c54-816aa4f8c502\n","stream":"stdout","time":"2017-10-26T12:57:57.697172793Z"}
+{"log":"[2017-10-26T12:57:57.696Z] [INFO] [#tid_456] [Identity] [GET] serving from cache: CacheKey(789c46b1-71f6-4ed5-8c54-816aa4f8c502) [marker:database_cacheHit_count:1]\n","stream":"stdout","time":"2017-10-26T12:57:57.697194504Z"}
+{"log":"[2017-10-26T12:57:57.696Z] [INFO] [#tid_456] [RestAPIVersion] authentication valid\n","stream":"stdout","time":"2017-10-26T12:57:57.697206231Z"}
+{"log":"[2017-10-26T12:57:57.696Z] [INFO] [#tid_456] [LocalEntitlementProvider] checking user 'whisk.system' has privilege 'ACTIVATE' for 'actions/whisk.system/noop'\n","stream":"stdout","time":"2017-10-26T12:57:57.69721612Z"}
+{"log":"[2017-10-26T12:57:57.696Z] [INFO] [#tid_456] [ActivationThrottler] concurrent activations in system = 1, below limit = 100\n","stream":"stdout","time":"2017-10-26T12:57:57.697226693Z"}
+{"log":"[2017-10-26T12:57:57.700Z] [INFO] [#sid_110] [MessageFeed] processing completed0[0][124] (1/128)\n","stream":"stdout","time":"2017-10-26T12:57:57.703134576Z"}
+{"log":"[2017-10-26T12:57:57.700Z] [INFO] [#tid_454] [LoadBalancerService] received active ack for '58a9c343ea144f6fa9c343ea142f6f91'\n","stream":"stdout","time":"2017-10-26T12:57:57.706093789Z"}
+{"log":"[2017-10-26T12:57:57.701Z] [INFO] [#tid_454] [ActionsApi]  [marker:controller_blockingActivation_finish:49:46]\n","stream":"stdout","time":"2017-10-26T12:57:57.706122066Z"}
+{"log":"[2017-10-26T12:57:57.701Z] [INFO] [#tid_454] [Worker] dbpoll shutdown\n","stream":"stdout","time":"2017-10-26T12:57:57.706136132Z"}
+{"log":"[2017-10-26T12:57:57.701Z] [INFO] [#tid_454] [ActivationFinisher] finisher shutdown\n","stream":"stdout","time":"2017-10-26T12:57:57.706145236Z"}
+{"log":"[2017-10-26T12:57:57.701Z] [INFO] [#tid_454] [BasicHttpService] [marker:http_post.200_count:50:50]\n","stream":"stdout","time":"2017-10-26T12:57:57.706153784Z"}
+{"log":"[2017-10-26T12:57:57.703Z] [INFO] [#tid_456] [LocalEntitlementProvider] not authorized: RejectRequest(429 Too Many Requests) Too many requests in the last minute (count: 101, allowed: 100).\n","stream":"stdout","time":"2017-10-26T12:57:57.706162067Z"}
+{"log":"[2017-10-26T12:57:57.713Z] [INFO] [#tid_456] [BasicHttpService] [marker:http_post.429_count:19:19]\n","stream":"stdout","time":"2017-10-26T12:57:57.714305898Z"}
+{"log":"[2017-10-26T12:57:57.719Z] [INFO] [#tid_458] POST /api/v1/namespaces/_/actions/noop blocking=true\n","stream":"stdout","time":"2017-10-26T12:57:57.720094815Z"}
+
