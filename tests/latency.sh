@@ -9,7 +9,7 @@ credentials=$2
 # How many samples to create by the test. Default: 10000
 samples=${3:-10}
 
-action="busyprint"
+action="noop"
 #"$currentDir/create.sh" "$host" "$credentials" "$action"
 
 # run latency tests
@@ -19,4 +19,4 @@ sudo docker run --rm markusthoemmes/loadtest loadtest \
   -k \
   -m POST \
   -H "Authorization: basic $encodedAuth" \
-  "$host/api/v1/namespaces/_/actions/$action?repeat=101"
+  "$host/api/v1/namespaces/_/actions/$action?blocking=true"

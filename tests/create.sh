@@ -10,8 +10,8 @@ action=$3
 
 # create a noop action
 echo "Creating action $action"
-curl -u "$credentials" "$host/api/v1/namespaces/_/actions/$action" -XPUT -d '{"namespace":"_","name":"test","exec":{"kind":"nodejs:default","code":"function main(){return {};}"}}' -H "Content-Type: application/json"
+curl -u "$credentials" "$host/api/v1/namespaces/_/actions/$action" -XPUT -d '{"namespace":"_","name":"test","exec":{"kind":"nodejs:default","code":"function main(){return {};}"}}' -H "Content-Type: application/json" -k
 
 # run the noop action
 echo "Running $action once to assert an intact system"
-curl -u "$credentials" "$host/api/v1/namespaces/_/actions/$action?blocking=true" -XPOST
+curl -u "$credentials" "$host/api/v1/namespaces/_/actions/$action?blocking=true" -XPOST -k
