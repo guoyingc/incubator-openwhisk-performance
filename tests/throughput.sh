@@ -8,12 +8,12 @@ host=${1:-"https://10.0.0.50:443"}
 credentials=${2:-"789c46b1-71f6-4ed5-8c54-816aa4f8c502:abczO3xZCLrMN6v2BKK1dXYFpXlPkccOFqm12CdAsMgRU4VrNZ9lyGVCGuMDGIwP"}
 # concurrency level of the throughput test: How many requests should
 # open in parallel.
-concurrency=${3:-2}
+concurrency=${3:-64}
 # How many threads to utilize, directly correlates to the number
 # of CPU cores
 threads=${4:-1}
 # How long to run the test
-duration=${5:-10s}
+duration=${5:-20s}
 
 action="noop"
 #"$currentDir/create.sh" "$host" "$credentials" "$action"
